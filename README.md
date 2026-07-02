@@ -1,79 +1,81 @@
-# 🎬 YouTube Downloader Pro
+# youtube_zua-
 
-Application Desktop moderne pour télécharger des vidéos YouTube avec une interface graphique élégante.
+## Documentation du projet
 
-## 🚀 Fonctionnalités
+Ce dépôt contient le projet "youtube_zua-" développé en Python.
 
-- ✅ Interface graphique moderne avec design sombre
-- ✅ Téléchargement de vidéos YouTube en plusieurs formats (MP4, MP3, WEBM)
-- ✅ Choix de la qualité (1080p, 720p, 480p, Audio uniquement)
-- ✅ Barre de progression en temps réel
-- ✅ Affichage de la vitesse de téléchargement
-- ✅ Sélection du dossier de destination
-- ✅ Validation des URLs YouTube
-- ✅ Gestion des erreurs
-- ✅ Boutons Pause, Annuler, Effacer
+Remarque : adaptez les commandes et noms de fichiers (par ex. `main.py`, `requirements.txt`) si votre projet utilise des noms différents.
 
-## 📋 Prérequis
+### Description
+(Présentez ici brièvement l'objectif du projet, ce qu'il fait et à qui il s'adresse.)
 
-- Python 3.7 ou supérieur
-- Windows (testé sur Windows 10/11)
+### Fonctionnalités principales
+- (Décrire les fonctionnalités principales — ex: téléchargement/gestion de vidéos YouTube, extraction de métadonnées, etc.)
 
-## 🔧 Installation
+### Prérequis
+- Python 3.8+
+- pip
+- (Optionnel) virtualenv / venv
 
-1. Clonez ou téléchargez ce projet
+### Installation
+1. Cloner le dépôt :
 
-2. Installez les dépendances :
-```bash
-pip install -r requirements.txt
-```
+   git clone https://github.com/ndombeelie/youtube_zua-.git
+   cd youtube_zua-
 
-3. (Optionnel) Pour la conversion MP3, installez FFmpeg :
-   - Téléchargez FFmpeg depuis https://ffmpeg.org/download.html
-   - Ajoutez FFmpeg au PATH de Windows
+2. Créer et activer un environnement virtuel :
 
-## 🎮 Utilisation
+   python -m venv .venv
+   # Linux / macOS
+   source .venv/bin/activate
+   # Windows (PowerShell)
+   .\.venv\Scripts\Activate.ps1
 
-1. Lancez l'application :
-```bash
-python youtube_downloader_pro.py
-```
+3. Installer les dépendances (si le fichier requirements.txt existe) :
 
-2. Cliquez sur "Dossier" pour sélectionner où sauvegarder les vidéos
+   pip install -r requirements.txt
 
-3. Collez l'URL YouTube dans le champ "Lien YouTube"
+### Configuration
+- Si le projet nécessite des clés API (ex: clé YouTube Data API) ou un fichier de configuration :
+  - Créez un fichier `.env` ou `config.json` à la racine.
+  - Ajoutez-y vos clés / tokens. Exemple `.env` :
 
-4. Choisissez le format (MP4, MP3, WEBM) et la qualité
+    YOUTUBE_API_KEY=VOTRE_CLE_API
 
-5. Cliquez sur "Télécharger"
+  - Assurez-vous d'ajouter `.env` à `.gitignore`.
 
-6. Suivez la progression en temps réel
+### Utilisation
+- Exemple pour lancer le script principal (remplacez `main.py` par le script réel) :
 
-## 🎨 Interface
+  python main.py
 
-L'interface comprend :
-- **Bouton Dossier** : Sélection du dossier de destination
-- **Champ URL** : Pour coller le lien YouTube
-- **Menus déroulants** : Choix du format et de la qualité
-- **Bouton Télécharger** : Lance le téléchargement
-- **Barre de progression** : Affiche l'avancement en %
-- **Boutons de contrôle** : Pause, Annuler, Effacer
-- **Zone d'informations** : Vitesse, taille, temps restant
+- Options courantes :
+  - `--help` : afficher l'aide
+  - (Documenter ici les autres options disponibles)
 
-## ⚠️ Notes
+### Structure du dépôt (exemple)
+- README.md                - documentation du projet
+- CHANGELOG.md             - journal des mises à jour
+- requirements.txt         - dépendances Python
+- src/                     - code source
+- scripts/                 - scripts utilitaires
+- tests/                   - tests unitaires
 
-- La fonction Pause/Reprise est en développement
-- Pour télécharger en MP3, FFmpeg doit être installé
-- Assurez-vous d'avoir une connexion internet stable
-- Respectez les droits d'auteur lors du téléchargement
+Adaptez cette section à la structure réelle du projet.
 
-## 🛠️ Technologies utilisées
+### Tests
+- Pour lancer les tests (si présents) :
 
-- **Python** : Langage de programmation
-- **tkinter** : Interface graphique
-- **yt-dlp** : Téléchargement YouTube
-- **threading** : Téléchargement asynchrone
+  pytest
 
-## 📝 Licence
+### Contribution
+Merci pour votre contribution !
+- Ouvrez une issue pour proposer une fonctionnalité ou signaler un bug.
+- Créez une branche dédiée : `feature/nom` ou `fix/nom`.
+- Respectez PEP8 et ajoutez des tests lorsque possible.
 
-Ce projet est à usage éducatif uniquement.
+### Licence
+(Indiquez la licence du projet, par ex. MIT. Si aucune licence n'est choisie, ajoutez-en une.)
+
+### Contact
+Pour toute question, ouvrez une issue ou contactez le propriétaire du dépôt.
